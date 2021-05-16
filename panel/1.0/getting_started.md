@@ -195,6 +195,7 @@ After=redis-server.service
 User=www-data
 Group=www-data
 Restart=always
+RestartSec=30s
 ExecStart=/usr/bin/php /var/www/pterodactyl/artisan queue:work --queue=high,standard,low --sleep=3 --tries=3
 
 [Install]
