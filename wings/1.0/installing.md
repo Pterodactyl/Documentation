@@ -157,6 +157,7 @@ LimitNOFILE=4096
 PIDFile=/var/run/wings/daemon.pid
 ExecStart=/usr/local/bin/wings
 Restart=on-failure
+RestartSec=30s
 StartLimitInterval=600
 
 [Install]
